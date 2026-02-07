@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0A84FF" />
+    <meta
+      name="description"
+      content="BlueAirplane is an iOS app that lets you post pins with messages on a map — for everyone to see."
+    />
+    <title>BlueAirplane — Pins on a Map</title>
+
+    <link rel="preconnect" href="https://apps.apple.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Top Nav -->
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#top" aria-label="BlueAirplane home">
+          <img class="brand__icon" src="blueairplane.png" alt="BlueAirplane app icon" />
+          <span class="brand__name">BlueAirplane</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+            <span class="nav__toggleIcon" aria-hidden="true"></span>
+            <span class="sr-only">Toggle menu</span>
+          </button>
+
+          <div class="nav__menu" id="navMenu">
+            <a class="nav__link" href="#how">How it works</a>
+            <a class="nav__link" href="#safety">Safety</a>
+            <a class="nav__link" href="#download">Download</a>
+            <a class="nav__cta btn btn--primary" href="https://apps.apple.com/de/app/blueairplane/id6756213286?l=en-GB" target="_blank" rel="noopener">
+              Get the app
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="top" class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy reveal">
+            <div class="badge">
+              <span class="badge__dot" aria-hidden="true"></span>
+              iOS app • pins with messages on a map
+            </div>
+
+            <h1 class="hero__title">
+              Post a message.
+              <span class="hero__titleAccent">Leave it on the map.</span>
+            </h1>
+
+            <p class="hero__subtitle">
+              BlueAirplane lets you drop pins with short messages for everyone to see — a living map of thoughts, tips,
+              and moments.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="https://apps.apple.com/de/app/blueairplane/id6756213286?l=en-GB" target="_blank" rel="noopener">
+                Download on the App Store
+              </a>
+              <a class="btn btn--ghost" href="#safety">
+                See safety features
+              </a>
+            </div>
+
+            <div class="hero__meta">
+              <div class="metaCard">
+                <div class="metaCard__label">Creator</div>
+                <a class="metaCard__value" href="https://tiktok.com/@didilockit" target="_blank" rel="noopener">
+                  TikTok.com/@didilockit
+                </a>
+              </div>
+
+              <div class="metaCard">
+                <div class="metaCard__label">CEO</div>
+                <div class="metaCard__row">
+                  <a class="metaCard__value" href="mailto:ante@blueairplane.net">ante@blueairplane.net</a>
+                  <button class="chip" type="button" data-copy="ante@blueairplane.net" aria-label="Copy CEO email">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal" aria-hidden="true">
+            <div class="phoneCard">
+              <div class="phoneCard__top">
+                <img class="phoneCard__icon" src="blueairplane.png" alt="" />
+                <div class="phoneCard__title">
+                  <div class="phoneCard__name">BlueAirplane</div>
+                  <div class="phoneCard__status">Pins • Messages • Map</div>
+                </div>
+              </div>
+
+              <div class="mapMock">
+                <div class="mapMock__grid"></div>
+
+                <!-- Fake pins -->
+                <div class="pin pin--blue" style="left: 18%; top: 28%">
+                  <span class="pin__dot"></span>
+                </div>
+                <div class="pin pin--blue" style="left: 62%; top: 20%">
+                  <span class="pin__dot"></span>
+                </div>
+                <div class="pin pin--blue" style="left: 74%; top: 58%">
+                  <span class="pin__dot"></span>
+                </div>
+                <div class="pin pin--blue" style="left: 34%; top: 62%">
+                  <span class="pin__dot"></span>
+                </div>
+
+                <div class="bubble" style="left: 14%; top: 40%">
+                  “Best sunset spot.”
+                </div>
+                <div class="bubble" style="left: 52%; top: 34%">
+                  “Coffee here = insane.”
+                </div>
+                <div class="bubble" style="left: 56%; top: 68%">
+                  “Say hi 👋”
+                </div>
+              </div>
+
+              <div class="phoneCard__bottom">
+                <div class="pill">Drop a pin</div>
+                <div class="pill">Write a message</div>
+                <div class="pill">Explore nearby</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__bg" aria-hidden="true"></div>
+      </section>
+
+      <!-- How it works -->
+      <section id="how" class="section">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">How it works</h2>
+            <p class="sectionHead__subtitle">
+              Simple, fast, and designed to feel like a clean SwiftUI screen.
+            </p>
+          </div>
+
+          <div class="grid3">
+            <article class="card reveal">
+              <div class="card__icon card__icon--primary">
+                <!-- pin icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 22s7-5.2 7-12a7 7 0 10-14 0c0 6.8 7 12 7 12z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <circle cx="12" cy="10" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8" />
+                </svg>
+              </div>
+              <h3 class="card__title">Drop a pin</h3>
+              <p class="card__text">
+                Tap anywhere on the map to place a pin. Your message becomes part of the public map feed.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__icon card__icon--primary">
+                <!-- message icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M5 6.5A3.5 3.5 0 018.5 3h7A3.5 3.5 0 0119 6.5v6A3.5 3.5 0 0115.5 16H10l-4.2 3.1c-.5.4-1.3 0-1.3-.7V6.5z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M8 7.8h8M8 10.8h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3 class="card__title">Write a message</h3>
+              <p class="card__text">
+                Keep it short, fun, or helpful. Share notes, thoughts, or local tips with everyone.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__icon card__icon--primary">
+                <!-- compass icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+                  <path
+                    d="M14.6 9.4l-1.8 5.2-5.2 1.8 1.8-5.2 5.2-1.8z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="card__title">Explore nearby</h3>
+              <p class="card__text">
+                See what people posted around you — from hidden gems to quick “hello” pins.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Safety / Moderation -->
+      <section id="safety" class="section section--alt">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Content moderation you can trust</h2>
+            <p class="sectionHead__subtitle">
+              A map for everyone needs strong safety tools. BlueAirplane makes moderation fast and visible.
+            </p>
+          </div>
+
+          <div class="safetyGrid">
+            <article class="card card--safety reveal">
+              <div class="card__icon card__icon--hide" aria-hidden="true">
+                <!-- crossed-out eye -->
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M2.5 12s3.5-7 9.5-7 9.5 7 9.5 7-3.5 7-9.5 7S2.5 12 2.5 12z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M9.5 9.5a3.5 3.5 0 004.9 4.9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M4 4l16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="card__title">Hide pins instantly</h3>
+              <p class="card__text">
+                Don’t want to see a pin? Hide any pin instantly — it disappears right away for you.
+              </p>
+              <div class="tag tag--hide">Grey • crossed-out eye</div>
+            </article>
+
+            <article class="card card--safety reveal">
+              <div class="card__icon card__icon--block" aria-hidden="true">
+                <!-- stop icon -->
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M8.2 4.5h7.6L19.5 8.2v7.6l-3.7 3.7H8.2L4.5 15.8V8.2L8.2 4.5z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M8 12h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="card__title">Block a user</h3>
+              <p class="card__text">
+                Block a user and hide all their pins instantly. Clean slate, immediately.
+              </p>
+              <div class="tag tag--block">Red • stop icon</div>
+            </article>
+
+            <article class="card card--safety reveal">
+              <div class="card__icon card__icon--report" aria-hidden="true">
+                <!-- flag icon -->
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M6 21V4.5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M6 5h10l-1.6 3 1.6 3H6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="card__title">Report inappropriate pins</h3>
+              <p class="card__text">
+                Report pins to us and we remove them within <strong>48 hours</strong>, guaranteed.
+              </p>
+              <div class="tag tag--report">Yellow • flag</div>
+            </article>
+
+            <article class="card card--safety reveal">
+              <div class="card__icon card__icon--filter" aria-hidden="true">
+                <!-- filter / funnel icon -->
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M4 6h16l-6.5 7v5l-3 1.5v-6.5L4 6z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="card__title">Built-in content filter</h3>
+              <p class="card__text">
+                A keyword filter blocks harmful pins from being posted (for example: “sh*t”).
+              </p>
+              <div class="tag tag--filter">Auto filter</div>
+            </article>
+          </div>
+
+          <div class="notice reveal" role="note">
+            <div class="notice__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 3.5l9 16H3l9-16z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linejoin="round"
+                />
+                <path d="M12 9v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <path d="M12 17.2h.01" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="notice__text">
+              <strong>Fast actions, clear controls.</strong>
+              Hide, block, and report are designed to be immediate — the way safety controls should feel.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Download -->
+      <section id="download" class="section">
+        <div class="container">
+          <div class="cta reveal">
+            <div class="cta__copy">
+              <h2 class="cta__title">Ready to pin your message?</h2>
+              <p class="cta__text">
+                Download BlueAirplane on iOS and start exploring the map.
+              </p>
+              <div class="cta__actions">
+                <a class="btn btn--primary" href="https://apps.apple.com/de/app/blueairplane/id6756213286?l=en-GB" target="_blank" rel="noopener">
+                  Download
+                </a>
+                <a class="btn btn--ghost" href="mailto:ante@blueairplane.net">
+                  Contact support
+                </a>
+              </div>
+              <p class="cta__fine">
+                Apple and the App Store are trademarks of Apple Inc.
+              </p>
+            </div>
+
+            <div class="cta__side" aria-hidden="true">
+              <div class="ctaCard">
+                <img src="blueairplane.png" alt="" class="ctaCard__icon" />
+                <div class="ctaCard__lines">
+                  <div class="ctaCard__line"></div>
+                  <div class="ctaCard__line ctaCard__line--short"></div>
+                </div>
+                <div class="ctaCard__button"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">
+            <img src="blueairplane.png" alt="" class="footer__icon" />
+            <div>
+              <div class="footer__name">BlueAirplane</div>
+              <div class="footer__small">Pins with messages on a map.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__right">
+          <a class="footer__link" href="https://tiktok.com/@didilockit" target="_blank" rel="noopener">TikTok</a>
+          <a class="footer__link" href="mailto:ante@blueairplane.net">ante@blueairplane.net</a>
+          <a class="footer__link" href="https://apps.apple.com/de/app/blueairplane/id6756213286?l=en-GB" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <span>© <span id="year"></span> BlueAirplane</span>
+        <span class="dotSep" aria-hidden="true">•</span>
+        <span class="footer__small">Made to feel clean & minimal — like SwiftUI.</span>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
